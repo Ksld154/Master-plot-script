@@ -1,0 +1,6 @@
+name,total_training_time,total_trainable_weights,save_transmission_ratio
+No Freeze,0:32:10.406013,229692100,0.0 %
+Static Freeze: 3 blocks,0:30:30.674590,228168580,0.6632879406823333 %
+Static Freeze: 6 blocks,0:27:53.790835,224595940,2.2186918923202015 %
+Static Freeze: 9 blocks,0:26:57.990786,212931940,7.29679427372557 %
+Gradually Freezing,0:27:53.903724,197164740,14.161288089577306 %
