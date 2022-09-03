@@ -64,12 +64,12 @@ python 03_mobilenet-plot_trans_duration.py \
 ## 5-4-1 Non-IID
 
 ```bash
-## resnet
+## resnet (fig. 5.12 + 5.13 + 5.14)
 python 04-1_plot-noniid.py \
 --load_static_path "./04-1-noniid/resnet/resnet_e=100_window=5_static_result.csv" \
 --load_gf_path "./04-1-noniid/resnet/result.csv"
 
-## mobilenet
+## mobilenet (fig. 5.12 + 5.13 + 5.14)
 python 04-1_plot-noniid.py \
 --load_static_path "./04-1-noniid/mobilenet/mobilenet_e=100_window=5_static_result.csv" \
 --load_gf_path "./04-1-noniid/mobilenet/result.csv"
@@ -78,7 +78,10 @@ python 04-1_plot-noniid.py \
 ## 5-4-2 Sync Freq
 
 ```bash
+## resnet (fig. 5.15 + 5.16)
 python 04-2_plot-diff-freq-group.py --load_file "./04-2-syncfreq/diff_freq_resnet2.csv"
+
+## mobilenet  (fig. 5.15 + 5.16)
 python 04-2_plot-diff-freq-group.py --load_file "./04-2-syncfreq/diff_freq_mobilenet2.csv"
 ```
 
@@ -88,11 +91,11 @@ python 04-2_plot-diff-freq-group.py --load_file "./04-2-syncfreq/diff_freq_mobil
 ## [Note] To drag the legend to appropriate locations, please execute the script on your local computer
 ## if you want to execute it on remote server, please run it through MobaXterm (for enabling X11 server)
 
-## mobile & resnet
+## mobile & resnet (fig. 5.17 + 5.18)
 python 05-1_mobilenet_plot_no_opportunistic.py
 python 05-1_resnet_plot_no_opportunistic.py
 
-## merged figure
+## merged figure (fig. 5.19 + 5.20)
 python 05-2_plot_no_opportunistic_merged.py
 ```
 
